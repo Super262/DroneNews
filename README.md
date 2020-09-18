@@ -22,32 +22,63 @@
 
 用户注册完成后，小程序自动跳转到登录页面。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00001.png)
+
 #### b) 登录界面
 
 用户登录后，小程序跳转到主界面。主界面包括资讯页、视频页和用户信息页。小程序默认加载资讯页。主界面设有底部选择栏，用户可以选择跳转到其它的页面。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00002.png)
 
 #### c) 资讯页
 
 此页面包括所有的资讯简介。单击图片，可以跳转到详情页；单击搜索框，可以跳转到搜索页。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00003.png)
+
 ##### 1) 详情页
 此页面包括了新闻的详细内容（图片和文字），排版格式与原始的HTML页面保持一致。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00004.png)
+
 ##### 2) 搜索页
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00005.png)
+
 搜索页面可以显示搜索记录（本地存储，可以清空）和热搜词（从后台查询得来）。单机热搜词或输入搜索内容后点击“搜索”，小程序会跳转到查询结果页；点击搜索结果中的图片，可以跳转到相应新闻的详情页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00006.png)
+
 
 #### d) 视频页
 此页面包括所有的视频简介。单击图片，可以跳转到详情页；单击搜索框，可以跳转到搜索页。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00007.png)
+
 ##### 1) 详情页
 
-向下滑动，可以看到底栏和评论信息。底栏的四个按钮分别为“收藏”、“评论”、“下载或举报”和“作者详情”。下图展示了分别单击这四个按钮后的效果。点击“举报用户”后，小程序跳转至举报页。
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00008.png)
 
+向下滑动，可以看到底栏和评论信息。底栏的四个按钮分别为“收藏”、“评论”、“下载或举报”和“作者详情”。下图展示了分别单击这四个按钮后的效果。
 
-##### 2) 搜索页搜索页面可以显示搜索记录（本地存储，可以清空）和热搜词（从后台查询得来）。单机热搜词或输入搜索内容后点击“搜索”，小程序会跳转到查询结果页；点击搜索结果中的图片，可以跳转到相应视频的详情页。
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00009.png)
+
+点击“举报用户”后，小程序跳转至举报页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00010.png)
+
+##### 2) 搜索页
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00011.png)
+
+搜索页面可以显示搜索记录（本地存储，可以清空）和热搜词（从后台查询得来）。单机热搜词或输入搜索内容后点击“搜索”，小程序会跳转到查询结果页；点击搜索结果中的图片，可以跳转到相应视频的详情页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00012.png)
 
 #### e) 用户信息页
 用户信息页展示了当前用户的用户名、粉丝数、关注数和获赞数。单击头像后，可以上传新的头像。头像下方的区域依次展示了当前用户上传的视频（封面）、当前用户收藏的视频、当前用户所关注的人上传的视频。单击上传视频后，用户可以从手机中选择视频并上传。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00013.png)
 
 ### 四、 设计后台接口
 
@@ -101,6 +132,8 @@ f) reportUser：举报用户（参数：包括举报内容的封装类）
 ### 五、 设计数据库
 数据库drone_news一共包含 9 张表，分别为用户信息（users），用户关注关系（users_fans），新闻（messages）， 视 频 （videos）， 视 频 收 藏 关 系 （videos_users_like）,视频评论（videos_comments）,视频举报（videos_users_report）， 视频搜索记录（search_records）， 新闻搜索记录（msg_search_records）。数据库的ER图如下。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00014.png)
+
 ### 六、 小程序的界面和关键代码
 
 #### 1. 所有界面
@@ -109,25 +142,63 @@ f) reportUser：举报用户（参数：包括举报内容的封装类）
 
 用户注册完成后，小程序自动跳转到登录页面。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00015.png)
+
 ##### b) 登录界面
 
 用户登录后，小程序跳转到主界面。主界面包括资讯页、视频页和用户信息页。小程序默认加载资讯页。主界面设有底部选择栏，用户可以选择跳转到其它的页面。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00016.png)
+
 ##### c) 资讯页
 此页面包括所有的资讯简介。单击图片，可以跳转到详情页；单击搜索框，可以跳转到搜索页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00017.png)
+
 ###### 1) 详情页
 此页面包括了新闻的详细内容（图片和文字），排版格式与原始的HTML页面保持一致。
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00018.png)
+
 ###### 2) 搜索页
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00019.png)
+
 搜索页面可以显示搜索记录（本地存储，可以清空）和热搜词（从后台查询得来）。单机热搜词或输入搜索内容后点击“搜索”，小程序会跳转到查询结果页；点击搜索结果中的图片，可以跳转到相应新闻的详情页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00020.png)
+
 ##### d) 视频页
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00021.png)
+
 此页面包括所有的视频简介。单击图片，可以跳转到详情页；单击搜索框，可以跳转到搜页。
+
+
 ###### 1) 详情页
-向下滑动，可以看到底栏和评论信息。底栏的四个按钮分别为“收藏”、“评论”、“下载或举报”和“作者详情”。下图展示了分别单击这四个按钮后的效果。点击“举报用户”后，小程序跳转至举报页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00022.png)
+
+向下滑动，可以看到底栏和评论信息。底栏的四个按钮分别为“收藏”、“评论”、“下载或举报”和“作者详情”。下图展示了分别单击这四个按钮后的效果。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00023.png)
+
+点击“举报用户”后，小程序跳转至举报页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00024.png)
+
 ###### 2) 搜索页
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00025.png)
+
 搜索页面可以显示搜索记录（本地存储，可以清空）和热搜词（从后台查询得来）。单机热搜词或输入搜索内容后点击“搜索”，小程序会跳转到查询结果页；点击搜索结果中的图片，可以跳转到相应视频的详情页。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00026.png)
+
 ###### e) 用户信息页
 用户信息页展示了当前用户的用户名、粉丝数、关注数和获赞数。单击头像后，可以上传新的头像。头像下方的区域依次展示了当前用户上传的视频（封面）、当前用户收藏的视频、当前用户所关注的人上传的视频。单击上传视频后，用户可以从手机中选择视频并上传。
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00027.png)
 
 #### 2. 关键代码
 
@@ -155,20 +226,31 @@ f) reportUser：举报用户（参数：包括举报内容的封装类）
 
 ##### 1) 登录界面
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00028.png)
+
 ##### 2) 首页
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00029.png)
 
 ##### 3) 用户列表
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00030.png)
+
 ##### 4) 举报列表
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00031.png)
 
 ##### 5) 视频列表
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00032.png)
+
 ##### 6) 资讯列表
 
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00033.png)
 
 ##### 7) 添加资讯
+
+![image](https://github.com/Super262/DroneNews/blob/master/screenshots/pic00034.png)
 
 #### 2. 关键代码
 1) VideoController.java
