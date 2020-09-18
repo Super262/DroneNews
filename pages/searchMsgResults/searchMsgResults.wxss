@@ -1,0 +1,85 @@
+/* pages/searchMsgResults/searchMsgResults.wxss */
+.item-container {
+  position: relative;
+}
+
+
+.goodbutton {
+  margin-top: 5rpx;
+  margin-bottom: 15rpx;
+  width: 95%;
+  height: 60rpx;
+  font-size: 25rpx;
+  background-color: rgb(248, 248, 248);
+  color: rgb(144, 148, 150);
+  border-radius: 5rpx;
+  background: bg_red;
+}
+
+
+.btn_hover {
+  background:  rgb(236, 179, 156);
+}
+
+.cover {
+  width: 100%;
+  height: 400rpx;
+  display: block;
+}
+
+.back-img {
+  display: block;
+  background-color: black;
+}
+
+.desc {
+  margin-top: -10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.desc .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc .faceName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.title {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  width: 600rpx;
+}
+
+.myface {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  margin-top: 10rpx;
+  margin-right: 5rpx;
+}
+
+.nickname {
+  font-size: 23rpx;
+  margin-top: 6rpx;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  color: rgb(100, 100, 100);
+}
+.videoDesc{
+  font-size: 28rpx;
+  margin-top: 25rpx;
+  margin-right: 60rpx;
+  margin-left: 15rpx;
+  color:rgb(71, 71, 71);
+}

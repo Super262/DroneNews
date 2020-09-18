@@ -1,0 +1,22 @@
+<!--pages/publisher/publisher.wxml-->
+<view>
+
+  <view class='container'>
+
+    <image src="{{faceUrl}}" class="face"></image>
+    <label class='nickname'>{{nickname}}</label>
+    <block wx:if="{{isFollow}}">
+      <button size='mini' type='' class='follow' data-followType='0' bindtap='followMe'>取消关注</button>
+    </block>
+    <block wx:if="{{!isFollow}}">
+      <button size='mini' type='primary' class='follow' data-followType='1' bindtap='followMe'>关注我</button>
+    </block>
+
+    <view class='container-row'>
+     <label>我有{{fansCounts}}个粉丝；我关注了{{followCounts}}人；我获得{{receiveLikeCounts}}个赞。</label>
+    </view>
+  </view>
+
+</view>
+
+<view class="line"></view>

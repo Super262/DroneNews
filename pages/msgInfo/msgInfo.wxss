@@ -1,0 +1,8 @@
+/* pages/msgInfo/msgInfo.wxss */
+@import "/pages/wxParse/wxParse.wxss";
+.container{
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}

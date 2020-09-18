@@ -1,0 +1,49 @@
+<view>
+
+  <view class='container'>
+  
+    <image src="{{faceUrl}}" class="face" bindtap='changeFace'></image>
+    <label class='nickname'>{{nickname}}</label>
+
+    <button size='mini' class='primary' bindtap='uploadVideo'>上传视频</button>
+    <button size='mini' type='' class='logout' bindtap='logout'>退出登录</button>
+
+    <view class='container-row'>
+      <label>我有{{fansCounts}}个粉丝；我关注了{{followCounts}}个人；我获得{{receiveLikeCounts}}个赞。</label>
+    </view>
+  </view>
+
+</view>
+
+<view class="line"></view>
+
+<view class='container-video'>
+    <!-- 发布过的作品 -->
+    <view class='{{videoSelClass}} {{isSelectedWork}}' bindtap='doSelectWork'>我的作品</view>
+    <!-- 收藏的点赞的视频 -->
+    <view class='{{videoSelClass}} {{isSelectedLike}}' bindtap='doSelectLike'>我的收藏</view>
+    <!-- 用户关注过人发表的视频 -->
+    <view class='{{videoSelClass}} {{isSelectedFollow}}' bindtap='doSelectFollow'>我的关注</view>
+</view>
+
+<view class='container-video-list'>
+
+<view hidden='{{myWorkFalg}}'>
+    <block wx:for="{{myVideoList}}" >
+        <image src='{{serverUrl}}{{item.coverPath}}' class='videoImage' mode="aspectFill" bindtap='showVideo' data-arrindex='{{index}}'></image>
+    </block>
+</view>
+
+<view hidden='{{myLikesFalg}}'>
+    <block wx:for="{{likeVideoList}}" >
+        <image src='{{serverUrl}}{{item.coverPath}}' class='videoImage' mode="aspectFill" bindtap='showVideo' data-arrindex='{{index}}'></image>
+    </block>
+</view>
+
+<view hidden='{{myFollowFalg}}'>
+    <block wx:for="{{followVideoList}}" >
+        <image src='{{serverUrl}}{{item.coverPath}}' class='videoImage' mode="aspectFill" bindtap='showVideo' data-arrindex='{{index}}'></image>
+    </block>
+</view>
+
+</view>

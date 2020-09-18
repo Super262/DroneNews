@@ -1,0 +1,17 @@
+<!--pages/index/index.wxml-->
+<view>
+  <button class='goodbutton' hover-class="hover" bindtap='showSearch'>搜你想看的新闻……</button>
+  <view wx:for="{{msgList}}" class="item-container">
+    <view style='width:{{screenWidth}}px;height:210px;' class='back-img'>
+      <image src="{{serverUrl}}{{item.coverPath}}" style='width:{{screenWidth}}px;height:210px;' mode="aspectFit" bindtap='showMsgInfo' data-arrindex='{{index}}'>
+      </image>
+    </view>
+    <view class="desc">
+      <view class="faceName">
+        <image class='myface' src="{{serverUrl}}{{item.sourceIcon}}" mode="scaleToFill"></image>
+        <view class="nickname">{{item.sourceName}}</view>
+      </view>
+      <view class="videoDesc">{{item.title}}</view>
+    </view>
+  </view>
+</view>
