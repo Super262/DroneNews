@@ -1,3 +1,5 @@
+# DroneNews
+The [drone_news](https://github.com/Super262/drone_news) is both the web server and the administration site for DroneNews. 
 ## 软件和硬件环境：
 
 微信开发者工具1.02，IntelliJ IDEA 2019
@@ -264,5 +266,3 @@ f) reportUser：举报用户（参数：包括举报内容的封装类）
 
 ### 十、 体会
 在本次项目实战中，我第一次接触了基于JavaScript的程序设计，体会到这种语言的便利性和简洁性。在设计数据库时，我学着设计合理且完备的表，不足的是我没有让多个实体间建立有效的联系，数据库的可靠性是很低的。在开发的过程中，尽管我遇到了很多问题，但解决问题的过程帮助我更深刻地体会程序设计的要点。
-
-
